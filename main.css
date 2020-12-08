@@ -1,0 +1,158 @@
+ol{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+@font-face {
+    font-family: 'Exocet-Heavy';
+    src: url('exocet-heavy.ttf') format('truetype');
+}
+
+body {
+    counter-reset: section section2;
+    margin-left: 40px;
+}
+
+h1{
+    font-family: Exocet-Heavy, Arial;
+    margin-bottom: 0;
+    clear:both;
+}
+
+h1::first-letter {
+    /*font-size: 140%;*/
+}
+h2::first-letter {
+    /*font-size: 140%;*/
+}
+
+h1:before {
+    counter-increment: section;
+    content: counter(section) ".\0000a0";
+    counter-reset: section2;
+}
+h2:before {
+    counter-increment: section2;
+    content: counter(section) "." counter(section2) ".\0000a0";
+}
+
+h2{
+    font-family: Exocet-Heavy, Arial;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+
+.big{
+    font-size: 140%;
+}
+
+.featured{
+    #box-shadow: 0px 0px 10px 4px #0ff;
+    #margin: 10px;
+}
+
+.course-logo{
+    max-height: 50px;
+}
+
+.cert{
+    margin-right: 20px;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+
+.cert:hover{
+    box-shadow: 0px 0px 10px 4px #ffe247;
+}
+
+.book {
+    width: 200px;
+    margin-right: 20px;
+    vertical-align: top;
+}
+
+
+.border{
+    border: 1px solid black;
+}
+
+.container {
+    display: inline-block;
+    position:relative;
+    height: min-content;
+    #float: left;
+}
+
+.plans{
+    border: 1px black dotted;
+    width: 200px;
+}
+
+
+.laude{
+    position: absolute;
+    left: 30px;
+    bottom: 40px;
+    #background: rgb(206, 255, 255);
+    #padding: 3px 5px;
+    border-radius: 5px;
+    border: solid 1px;
+}
+
+.laude:hover{
+    box-shadow: 0px 0px 10px 4px #ffe247;
+    cursor: pointer;
+}
+
+.label{
+    position: absolute;
+    left: 30px;
+    #text-shadow: 0px 0px 10px #1f7c00;
+    background: rgb(206, 255, 255);
+    padding: 3px 5px;
+    border-radius: 5px;
+    border: solid 1px;
+}
+
+.year{
+    background: rgb(210, 255, 142);
+}
+
+.took{
+    background: rgb(229, 160, 255);
+}
+
+
+.sheets-link{
+    position: absolute;
+    width: 50px;
+    top: 20px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.sheets-link:hover{
+
+}
+
+.symbol{
+    width: 250px;
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+.row{
+    width: min-content;
+    display: grid;
+    grid-template: "auto auto auto auto auto";
+    grid-gap: 5px;
+}
+
+.skills-row{
+    margin-bottom: 10px;
+}
