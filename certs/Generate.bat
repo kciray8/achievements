@@ -44,7 +44,6 @@ magick android.jpg -resize 300 small/android.jpg
 magick js.png -resize 200 small/js.png
 magick ap_bio_flashcards.jpg -resize 300 small/ap_bio_flashcards.jpg
 magick as3.jpg -resize 200 small/as3.jpg
-
-
+magick elementary_statistics.png -resize 300 small/elementary_statistics.png
 
 pause
